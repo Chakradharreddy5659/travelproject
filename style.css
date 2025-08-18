@@ -280,8 +280,6 @@ hr {
   font-size: 20px;
 }
 
-.buttons {}
-
 .buttons a {
   text-decoration: none;
   color: aliceblue;
@@ -293,7 +291,6 @@ hr {
 
 .btn-primary {
   background-color: rgb(246, 90, 90);
-
   border: none;
   color: #ffffff;
   display: inline-block;
@@ -489,6 +486,7 @@ hr {
 
 .image-gallery {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
@@ -526,6 +524,7 @@ hr {
 .container3 {
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
 
@@ -677,8 +676,15 @@ hr {
 }
 
 /* pacakages section  */
+/* pacakages section  */
 .card-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+  
+  
 }
 
 .custom-packages {
@@ -687,4 +693,433 @@ hr {
 
 .card {
   display: flex;
+  
+}
+
+.card-image {
+  position: relative;
+}
+.card-image img{
+  width: 450px;
+}
+
+.price-tag {
+  position: absolute;
+  background-color: #F56960;
+  color: white;
+  padding: 10px;
+  width: 170px;
+  top: 20px;
+
+}
+
+.price-tag div {
+  font-size: large;
+}
+
+.card-footer {
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: #0791BE;
+  color: #f8f8f8;
+  height: 45px;
+  width: 450px;
+}
+
+.card-footer div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-right: 1px solid white;
+  padding: 1px 20px;
+  font-size: 17px;
+}
+
+.card-content {
+  padding: 30px;
+  background-color: #ffffff;
+  position: relative;
+  width: 360px;
+}
+
+.buttons {
+
+  display: inline;
+  align-items: center;
+  position: absolute;
+  padding: 10px;
+margin-left: -40px;
+  bottom: 0;
+  margin-bottom: 0px;
+  border-top: 1px solid rgb(183, 183, 183);
+}
+.booknow-btn{
+  font-size: large;
+  font-weight:bold;
+
+}
+.wishlist-btn{
+    font-size: large;
+  font-weight:bold;
+}
+.booknow-btn:hover {
+  color: #0791BE;
+}
+.wishlist-btn:hover{
+    color: #0791BE;
+}
+
+.buttons a {
+
+  margin-left: 48px;
+  width: 50%;
+  color: #383838;
+  transition: color 0.4s;
+
+
+
+
+}
+
+.buttons a i {
+  color: rgb(245, 112, 112);
+}
+
+.card-content h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  line-height: 1.2;
+  color: #101F46;
+  font-family: "Raleway", sans-serif;
+}
+
+.card-content p {
+  line-height: 1.6;
+  margin: 0 0 15px;
+  color: #787878;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.reviews {
+  margin-bottom: 15px;
+}
+
+.reviews span {
+  font-size: 20px;
+  color: #787878;
+  line-height: 1.1;
+}
+
+.stars i {
+  color: #F56960;
+  font-size: 20px;
+}
+.container3-button{
+  text-align: center;
+  margin: 50px;
+}
+.btn-packages{
+    background-color: #F56960;
+  color: #f5f5f5;
+  border: none;
+  text-decoration: none;
+  outline: 0;
+  transition: background-color 0.3s;
+  font-size: 20px;
+  padding: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+  width: 300px;
+  margin: 70px;
+}
+.btn-packages:hover{
+  background-color: #0791BE;
+}
+
+/* section 4 overlay section  */
+
+.overlay-container{
+  background-image: url(banner/slider-banner-2.jpg);
+background-size: cover;
+background-attachment: fixed;
+
+}
+.custom-text3 {
+  padding-top: 150px;
+  padding-bottom: 70px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.custom-text3 h5 {
+  color:#F56960;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.custom-text3 h2 {
+  font-size: 70px;
+  color: #ffffff;
+  line-height: 1.1;
+  font-weight: 900;
+  
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.custom-text3 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  margin-top: 30px;
+
+  line-height: 1.6;
+  margin: 0 0 15px;
+  word-wrap: break-word;
+}
+.icon-deivider3{
+    color: white;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.overlay-images {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 180px;
+  
+   
+
+}
+.image-content{
+  border-right: 1px solid whitesmoke;
+  padding-right: 50px;
+}
+
+.overlay-images img{
+  width: 150px;
+}
+.overlay-images p{
+  font-size: 20px;
+
+}
+.image-overlay2{
+background-image: url(images/img28.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 56%;
+    margin: auto;
+    text-align: center;
+}
+.overlay-content  {
+   background-color: rgba(0, 0, 0, 0.4);
+  
+  padding-bottom: 140px;
+    padding-top: 140px;
+    color: #ffffff;
+    box-sizing: border-box;
+
+}
+.overlay-content p {
+  
+  padding-left: 300px;
+  padding-right: 300px;
+  line-height: 1.6;
+    margin: 20px 0 15px;
+    word-wrap: break-word;
+}
+
+/* offer-card section travel discounts  */
+.offer-card {
+      position: relative;
+      width: 500px;
+    
+      overflow: hidden;
+     border: 10px solid rgb(255, 255, 255);
+      font-family: Arial, sans-serif;
+    }
+
+    .offer-image {
+      width: 100%;
+      display: block;
+      filter: brightness(50%);
+      
+    }
+
+    .offer-ribbon {
+      position: absolute;
+      top: 20px;
+      right: -40px;
+      background: #0078ff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 0;
+      text-align: center;
+      width: 150px;
+      transform: rotate(45deg);
+      
+    }
+
+    .offer-details {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px;
+      
+      color: #fff;
+     
+    }
+
+    .offer-location {
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .offer-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 6px;
+      line-height: 1.3;
+    }
+    .flex-offer-cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+    }
+
+
+    /* team members profile  */
+    .profile-card {
+  width: 400px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.profile-image {
+  width: 100%;
+  display: block;
+}
+
+.profile-info {
+  background: #fff;
+  padding: 15px;
+  margin: -40px 20px 0 20px; 
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d1b4c;
+  margin: 0;
+}
+
+.profile-role {
+  font-size: 16px;
+  color: #00a0d2;
+  margin-top: 5px;
+}
+
+.social-icons2 {
+  margin: 15px 0;
+}
+.social-icons2 ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-icons2 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f85c50;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 5px;
+  transition: background 0.3s;
+}
+
+.social-icons2 a:hover {
+  background:#12a0c6;
+}
+.flex-profile-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  margin-top: 50px;
+}   
+/* recent posts section */
+.flex-container-posts{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.posts-card{
+  width: 350px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px rgb(154, 154, 154);
+}
+.posts-card img{
+  width: 350px;
+  height: 300px;
+}
+.posts-card h3{
+  font-size: 23px;
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 340px;
+    margin: 10px;
+    padding-right: 10px;
+    line-height: 1.2;
+    color: #101F46;
+    font-family: "Raleway", sans-serif;
+    word-wrap: break-word;
+    transition: color 0.4s;
+}
+.posts-card h3:hover{
+  color:#12a0c6;
+}
+
+.posts-content p{
+    color: #383838;
+    font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.6;
+        margin: 10px;
+    padding-right: 10px;
 }
